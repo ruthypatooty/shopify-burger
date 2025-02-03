@@ -1,9 +1,10 @@
 <!DOCTYPE html>
     <html>
-    <head>
+    <head>{% render 'pagefly-head' %}
         {{ content_for_header }}
     </head>
     <body>
+        {% section 'announcement-bar' %}
         <main id = "main" role="main">
             {{ content_for_layout }}
         </main>
